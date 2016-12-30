@@ -16,6 +16,7 @@ demo：[https://zhangcuizc.github.io/loading-dots/](https://zhangcuizc.github.io
 * 微软EDGE
 * IE10/11
 * Chrome（有一种奇特的表现）
+
 ###字体
 * sans-serif(微软雅黑等测试通过)
 * serif（宋体等测试通过）
