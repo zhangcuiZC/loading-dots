@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+#使用方法：
+引入样式声明（在loading-dots.css里），在想要加入改样式的元素上添加dot类，比如：
 
-You can use the [editor on GitHub](https://github.com/zhangcuiZC/loading-dots/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+`<h4 class="dot">The people's Republic of China</h4>`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+demo：[https://zhangcuizc.github.io/loading-dots/](https://zhangcuizc.github.io/loading-dots/)
 
-### Markdown
+#特点：
+*无需使用javascript
+*利用:after伪类和text-shadow纯CSS实现
+*自动保持与字体颜色一致，也可自行更改
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#支持：
+###浏览器
+*火狐
+*微软EDGE
+*IE10/11
+*Chrome（有一种奇特的表现）
+###字体
+*sans-serif(微软雅黑等测试通过)
+*serif（宋体等测试通过）
+*monospace（微软雅黑mono等测试通过）
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhangcuiZC/loading-dots/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#####by ZC
