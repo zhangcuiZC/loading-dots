@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loading-dots demo by zc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="loading-dots.css">
+	<style type="text/css">
+		/*简单样式声明*/
+		body{
+			font-family: "microsoft yahei";
+		}
+		h1{
+			color: #156654;
+		}
+		h2{
+			color: #478515;
+		}
+		h3{
+			color: #ff7777;
+		}
+		h4{
+			color: #00ffff;
+		}
+		h5{
+			color: #abcdef;
+		}
+		h6{
+			color: #feabcd;
+		}
+		span{
+			color: purple;
+		}
+		#codes{
+			position: absolute;
+			top: 20px;
+			right: 40px;
+			width: 50%;
+			height: 200px;
+			border: 1px solid #ccc;
+			font-family: monospace;
+			font-size: 12px;
+			overflow: scroll;
+		}
+		#usemethod{
+			position: absolute;
+			top: 245px;
+			right: 40px;
+			width: 50%;
+			height: 380px;
+			border: 1px solid #ccc;
+			overflow: scroll;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="dot">中华人民共和国</h1>
+	<h2 class="dot">中华人民共和国</h2>
+	<h3 class="dot">中华人民共和国</h3>
+	<h4 class="dot">中华人民共和国</h4>
+	<h5 class="dot">中华人民共和国</h5>
+	<h6 class="dot">中华人民共和国</h6>
+	<h1 class="dot">The people's Republic of China</h1>
+	<h2 class="dot">The people's Republic of China</h2>
+	<h3 class="dot">The people's Republic of China</h3>
+	<h4 class="dot">The people's Republic of China</h4>
+	<h5 class="dot">The people's Republic of China</h5>
+	<h6 class="dot">The people's Republic of China</h6>
+	<p class="dot">这是一个演示段落的前半部分<span class="dot">这是一个行内元素</span>这是一个演示段落的后半部分</p>
+	<pre id="codes"><span class="dot">获取样式声明中</span><p>本地打开时，在除Firefox的浏览器中不显示.</p></pre>
+	<div id="usemethod">
+		<h3>使用方法：</h3>
+		<p>引入以上的样式声明，在想要加入该样式的元素上添加dot类。比如：</p>
+		<p>&lt;h4 class="dot"&gt;The people's Republic of China&lt;/h4&gt;</p>
+		<h4 class="dot">The people's Republic of China</h4>
+		<h3>特点：</h3>
+		<ul>
+			<li>无需使用javascript</li>
+			<li>利用:after伪类和text-shadow纯CSS实现</li>
+			<li>自动保持与字体颜色一致，也可自行更改</li>
+		</ul>
+		<h3>支持：</h3>
+		<h4 style="text-indent: 1em">浏览器</h4>
+		<ul>
+			<li>火狐</li>
+			<li>微软EDGE</li>
+			<li>IE10/11</li>
+			<li>Chrome（有一种奇特的表现）</li>
+		</ul>
+		<h4 style="text-indent: 1em">字体</h4>
+		<ul>
+			<li>sans-serif(微软雅黑等测试通过)</li>
+			<li>serif（宋体等测试通过）</li>
+			<li>monospace（微软雅黑mono等测试通过）</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		// 获取css中内容
+		var container=document.getElementById('codes');
+		var xhr=new XMLHttpRequest();
+		var xhrurl="loading-dots.css";
+		xhr.onreadystatechange=statechange;
+		xhr.open("GET",xhrurl,true);
+		xhr.send(null);
+
+		function statechange(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				container.innerHTML=xhr.responseText;
+			}
+		}
+	</script>
+</body>
+</html>
