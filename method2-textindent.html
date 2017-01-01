@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loading-dots2</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	/*该方法利用等宽字体和单位ch实现不同的缩进。不支持IE/EDGE浏览器*/
+		.dot:after{
+			content: "...";
+			font-family: Consolas, Monaco, monospace;
+			display: inline-block;
+			width: 3ch;
+			-webkit-animation: dotting 5s infinite step-start;
+			-o-animation: dotting 5s infinite step-start;
+			animation: dotting 5s infinite step-start;
+			overflow: hidden;
+			vertical-align: bottom;
+			text-align: left;
+		}
+
+		@keyframes dotting{
+			25%{
+				text-indent: -3ch;
+			}
+			50%{
+				text-indent: -2ch;
+			}
+			75%{
+				text-indent: -1ch;
+			}
+		}
+		@-webkit-keyframes dotting{
+			25%{
+				text-indent: -3ch;
+			}
+			50%{
+				text-indent: -2ch;
+			}
+			75%{
+				text-indent: -1ch;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1 class="dot">中华人民共和国</h1>
+</body>
+</html>
