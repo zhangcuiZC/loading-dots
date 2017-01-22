@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.makesortable.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: "microsoft yahei";
+		}
+		table{
+			width: 500px;
+			margin: 50px auto;
+			text-align: center;
+			border-collapse: collapse;
+			line-height: 2em;
+		}
+		td,th{
+			border: 1px solid #000;
+		}
+		tbody tr:nth-child(2n-1){
+			background-color: #ff7;
+		}
+		thead tr{
+			background-color: #f77;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<table class="heroinfo">
+	<thead title="点击排序">
+		<tr>
+			<th>英雄</th><th>力量</th><th>敏捷</th><th>智力</th><th>移速</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>英雄1</td><td>28</td><td>32</td><td>20</td><td>300</td>
+		</tr>
+		<tr>
+			<td>英雄2</td><td>29</td><td>22</td><td>30</td><td>320</td>
+		</tr>
+		<tr>
+			<td>英雄3</td><td>25</td><td>30</td><td>25</td><td>310</td>
+		</tr>
+		<tr>
+			<td>英雄4</td><td>33</td><td>28</td><td>22</td><td>305</td>
+		</tr>
+		<tr>
+			<td>英雄5</td><td>27</td><td>36</td><td>20</td><td>330</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
