@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+body{
+	background-color: #efefef;
+}
+.dragbox{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 250px;
+	background-color: #eee;
+	border: 1px solid #000;
+	font-size: 12px;
+}
+.dragheader{
+	background-color: #ccc;
+	border-bottom: 1px solid #000;
+	padding: 3px;
+	font-weight: bold;
+}
+.dragcontent{
+	padding: 3px;
+}
