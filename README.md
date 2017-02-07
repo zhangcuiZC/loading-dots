@@ -1,25 +1,24 @@
-##使用方法：
-引入样式声明（在loading-dots.css里），在想要加入改样式的元素上添加dot类，比如：
+##1、loading-dots
 
-`<h4 class="dot">The people's Republic of China</h4>`
+在文字后面添加...的动态loading效果
 
-demo：[https://zhangcuizc.github.io/loading-dots/](https://zhangcuizc.github.io/loading-dots/)
+##2、tablesortable
 
-##特点：
-* 无需使用javascript
-* 利用:after伪类和text-shadow纯CSS实现
-* 自动保持与字体颜色一致，也可自行更改
+实现表格的点击排序
 
-##支持：
-###浏览器
-* 火狐
-* 微软EDGE
-* IE10/11
-* Chrome（有一种奇特的表现）
+##3、dragDemo
 
-###字体
-* sans-serif(微软雅黑等测试通过)
-* serif（宋体等测试通过）
-* monospace（微软雅黑mono等测试通过）
+元素框的拖动demo
 
-#####by ZC
+##4、pieChartDemo
+
+使用SVG实现饼状图
+
+##5、svgClockDemo
+
+使用SVG实现一个时钟
+
+##6、canvasSnowDemo
+
+使用canvas实现科赫雪花
+
