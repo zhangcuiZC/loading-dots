@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft yahei";
+}
+.current{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	text-align: center;
+	line-height: 80vh;
+	font-size: 28px;
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+	transition: all 0.4s;
+}
+.current-color{
+	display: inline-block;
+	width: 5em;
+}
+.change{
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	height: 100px;
+	line-height: 100px;
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+	border-radius: 15px;
+	font-size: 28px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	box-shadow: 0 0 20px 0 #000;
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}

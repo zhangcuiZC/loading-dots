@@ -22,3 +22,6 @@
 
 使用canvas实现科赫雪花
 
+##7、randomColor
+
+随机获取一种颜色
