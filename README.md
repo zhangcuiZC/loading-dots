@@ -25,3 +25,7 @@
 ##7、randomColor
 
 随机获取一种颜色
+
+##8、canvasSmearDemo
+
+利用canvas对图片产生涂抹效果/利用canvas产生迷你图
